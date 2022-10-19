@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.VeryfyBeneficiary">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:weightSum="1"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verify Beneficiary"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/logo_blue"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/beneClose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cross_vector"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+<!--                    android:background="@drawable/blue_border_rounded_cornwe">-->
+
+                    <!--INPUT-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"-->
+<!--                        app:startIconTint="@color/logo_blue"-->
+<!--                        android:hint="Name"-->
+<!--                        app:boxStrokeColor="@color/logo_blue"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/nameBene"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="text"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameBene"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+<!--                    android:background="@drawable/blue_border_rounded_cornwe">-->
+
+                    <!--INPUT-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:startIconDrawable="@drawable/phone"-->
+<!--                        app:startIconTint="@color/logo_blue"-->
+<!--                        android:hint="Mobile No"-->
+<!--                        app:boxStrokeColor="@color/logo_blue"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/mobNoBene"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="number"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/phone"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mobNoBene"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Mobile No"
+                            android:inputType="number"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+<!--                    android:background="@drawable/blue_border_rounded_cornwe">-->
+
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:startIconDrawable="@drawable/acc_no"-->
+<!--                        app:startIconTint="@color/logo_blue"-->
+<!--                        android:hint="Account No"-->
+<!--                        app:boxStrokeColor="@color/logo_blue"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/accountNoBene"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="number"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/acc_no"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/accountNoBene"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Account No"
+                            android:inputType="number"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+<!--                    android:background="@drawable/blue_border_rounded_cornwe">-->
+
+                    <!--INPUT-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:startIconDrawable="@drawable/id"-->
+<!--                        app:startIconTint="@color/logo_blue"-->
+<!--                        android:hint="Transaction Id"-->
+<!--                        app:boxStrokeColor="@color/logo_blue"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/trIdBene"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="text"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/id"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/trIdBene"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Transaction Id"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+<!--                    android:background="@drawable/blue_border_rounded_cornwe">-->
+
+                    <!--INPUT-->
+
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:startIconDrawable="@drawable/id"-->
+<!--                        app:startIconTint="@color/logo_blue"-->
+<!--                        android:hint="Order Id"-->
+<!--                        app:boxStrokeColor="@color/logo_blue"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/orIdBene"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="text"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/id"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/orIdBene"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Order Id"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+<!--                    android:background="@drawable/blue_border_rounded_cornwe">-->
+
+                    <!--INPUT-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:startIconDrawable="@drawable/number123"-->
+<!--                        app:startIconTint="@color/logo_blue"-->
+<!--                        android:hint="Reference No"-->
+<!--                        app:boxStrokeColor="@color/logo_blue"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/refNoBene"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:inputType="text"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/number123"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/refNoBene"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Reference No"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/errorBene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Error"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

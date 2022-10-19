@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activities.MoneyTransferSuccess">
+    <!--    android:background="#EDF2F5"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rootViewMoneyTransferBeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:elevation="@dimen/_4sdp"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifMoneyTransferBetaFailed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/failure"
+                        app:loopCount="1" />
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifMoneyTransferBetaSuccess"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/checkmarksuccess"
+                        app:loopCount="1" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/moneyTrRemarksBeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="Remarks"
+                    android:textColor="#2196F3"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:orientation="horizontal">-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="@dimen/_1sdp"-->
+                    <!--                        android:text="Admin Bal : "-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        android:textSize="@dimen/_12ssp"-->
+                    <!--                        android:textColor="#212529"/>-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/moneyTrBal"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="Bal"-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        android:textSize="@dimen/_12ssp"-->
+                    <!--                        android:textColor="#828588"/>-->
+
+                    <!--                </LinearLayout>-->
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:orientation="horizontal">-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="Reference ID : "-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        android:textSize="@dimen/_12ssp"-->
+                    <!--                        android:textColor="#212529"/>-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/moneyTrRef"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="@dimen/_1sdp"-->
+                    <!--                        android:text="ref"-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        android:textSize="@dimen/_12ssp"-->
+                    <!--                        android:textColor="#828588"/>-->
+
+                    <!--                </LinearLayout>-->
+
+                    <LinearLayout
+                        android:id="@+id/llMobileNumer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile No : "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyMobileNoBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="name"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name : "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="name"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Number : "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="name"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IFSC : "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyIFSC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="name"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beneficiary Code : "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyBeneCodeBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="acc"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status :  "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyStatusBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="status"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount : "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/rupee_green" />
+
+                        <TextView
+                            android:id="@+id/moneyTrAmountBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="money"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bank Txn ID :  "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyTrBankTrIdBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="ID"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/moneyTrRespBeta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Message :  "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyTrRespBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="ID"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="API Ref :  "
+                            android:textColor="#212529"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moneyAPIRefBeta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:text="ref"
+                            android:textColor="#828588"
+                            android:textSize="@dimen/_9ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/white" />
+
+
+                <!--                <androidx.appcompat.widget.AppCompatButton-->
+                <!--                    android:id="@+id/moneyTrDone"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_40sdp"-->
+                <!--                    android:background="@drawable/blue_dark_rounded_color"-->
+                <!--                    android:layout_marginTop="@dimen/_20sdp"-->
+                <!--                    android:layout_marginBottom="@dimen/_20sdp"-->
+                <!--                    android:layout_marginStart="@dimen/_60sdp"-->
+                <!--                    android:layout_marginEnd="@dimen/_60sdp"-->
+                <!--                    android:text="Done"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textSize="@dimen/_18ssp"-->
+                <!--                    android:textColor="#fff"/>-->
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/moneyTrDoneBeta"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:background="@drawable/blue_dark_rounded_color"
+            android:text="Done"
+            android:textColor="#fff"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shareMoneyTrBeta"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/share_screenshot_rounded_blue"
+            android:text="Share"
+            android:textColor="@color/logo_blue"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

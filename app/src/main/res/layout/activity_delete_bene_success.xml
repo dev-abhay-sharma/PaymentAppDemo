@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E5EDF1"
+    tools:context=".activities.DeleteBeneSuccess">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:elevation="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifDeleteBeneFailed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/failure" />
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifDeleteBeneSuccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/checkmarksuccess" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/deleteResultBene"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14ssp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/white"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteDoneBene"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/blue_dark_rounded_color"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_60sdp"
+                android:text="Done"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="#fff"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>

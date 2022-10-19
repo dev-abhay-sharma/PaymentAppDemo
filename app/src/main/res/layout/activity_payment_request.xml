@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.PaymentRequest">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/blue_fill_rectangle_color">
+
+        <ImageView
+            android:id="@+id/gotoMainDa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Payment Request"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/mpaymentrequest" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:text="Request for Amount"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="just give few details"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_14ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="TopUp Request to User"
+                        android:textColor="#232f3e"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp">
+<!--                        android:background="@drawable/blue_border_rounded_cornwe">-->
+
+                        <!--INPUT-->
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Amount"-->
+<!--                            app:startIconDrawable="@drawable/rupee_green"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/amount_request"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="number"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/rupee_green"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/amount_request"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Amount"
+                                android:inputType="number"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border_edittext_skyblue">
+
+                        <!--INPUT-->
+
+
+                        <Spinner
+                            android:id="@+id/paymentMode_request"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/paymentMode_icon"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:paddingLeft="17dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:spinnerMode="dialog"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="18sp" />
+
+                        <!--ICON-->
+                        <ImageView
+                            android:id="@+id/paymentMode_icon"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="17dp"
+                            android:src="@drawable/mode1" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <RelativeLayout
+                            android:id="@+id/cash_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/border_edittext_skyblue"
+                            android:visibility="visible">
+
+                            <!--INPUT-->
+
+
+                            <Spinner
+                                android:id="@+id/paymentCash_request"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/paymentCash_icon"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="17dp"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"
+                                android:spinnerMode="dialog"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="18sp" />
+
+                            <!--ICON-->
+                            <ImageView
+                                android:id="@+id/paymentCash_icon"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="17dp"
+                                android:src="@drawable/mode1" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/transcationLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:visibility="gone">
+
+                            <!--INPUT-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:hint="Transaction No"-->
+<!--                                app:boxStrokeColor="@color/logo_blue"-->
+<!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/transcation"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:inputType="text"/>-->
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxStrokeWidth="0dp"
+                                app:boxStrokeWidthFocused="0dp"
+                                app:startIconDrawable="@drawable/password123"
+                                app:hintEnabled="false">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/transcation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:hint="Transaction No"
+                                    android:inputType="text"
+                                    android:paddingVertical="@dimen/_13sdp"
+                                    android:background="@drawable/edit_text_sky_blue"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/timeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/border_edittext_skyblue"
+                            android:visibility="gone">
+
+                            <!--INPUT-->
+
+
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/timeIcon"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:hint="Enter Time"
+                                android:paddingLeft="17dp"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"
+                                android:textCursorDrawable="@drawable/cursor_color"
+                                android:textSize="12sp" />
+
+                            <!--ICON-->
+                            <ImageView
+                                android:id="@+id/timeIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="17dp"
+                                android:src="@drawable/calendar" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/bankLyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone">
+
+                        <!--INPUT-->
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Enter Bank Name"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/bank_name"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/ic_bank"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/bank_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Enter Bank Name"
+                                android:inputType="text"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/utrLyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone">
+
+                        <!--INPUT-->
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Enter UTR Name"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/utr_name"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/utr_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Enter UTR Name"
+                                android:inputType="text"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/branchLyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone">
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Enter Branch"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/branch"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/ic_bank"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/branch"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Enter Branch"
+                                android:inputType="text"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/chequeLyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone">
+
+                        <!--INPUT-->
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Enter Cheque"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/cheque"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/ic_bank"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/cheque"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Enter Cheque"
+                                android:inputType="text"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border_edittext_skyblue">
+
+                        <!--INPUT-->
+
+
+                        <TextView
+                            android:id="@+id/paymentDate_request"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/paymentDate_rIcon"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="Payment Date"
+                            android:paddingLeft="17dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="20sp" />
+
+                        <!--ICON-->
+                        <ImageView
+                            android:id="@+id/paymentDate_rIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="17dp"
+                            android:src="@drawable/calendar" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edit_text_sky_blue"
+                        android:visibility="gone">
+
+                        <!--INPUT-->
+
+
+                        <EditText
+                            android:id="@+id/depositBank_request"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/depositBank_rIcon"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="Deposit Bank"
+                            android:paddingLeft="17dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="20sp" />
+
+                        <!--ICON-->
+                        <ImageView
+                            android:id="@+id/depositBank_rIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="17dp"
+                            android:src="@drawable/bank" />
+
+                    </RelativeLayout>
+
+
+<!--                    <Button-->
+<!--                        android:id="@+id/request"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_marginTop="25dp"-->
+<!--                        android:layout_marginRight="20dp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:background="@drawable/blue_button_background"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="Payment Request"-->
+<!--                        android:textColor="#ffffff" />-->
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/request"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/blue_button_background"
+                        android:padding="5dp"
+                        android:text="Payment Request"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

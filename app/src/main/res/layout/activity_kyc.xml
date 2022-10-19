@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFF4F8"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".activities.KYC">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/swpay_removebg"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KYC Verification"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="@color/logo_blue"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload Profile Picture"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#403E3E"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="(Format of Doc (PNG/\nJPEG)Max 250kb)"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#FF2020"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/kycUserImage"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_gravity="center"/>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/kycUploadPic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/blue_dark_rounded_color"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:text="choose file"
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_4sdp"/>
+
+                        <TextView
+                            android:id="@+id/kycUserImgSuccess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="No File Choosen"
+                            android:textSize="@dimen/_10ssp"
+                            android:textAlignment="center"
+                            android:textColor="#3E3E3E"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload Aadhar Front\nSide"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#403E3E"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="(Format of Doc (PNG/\nJPEG)Max 250kb)"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#FF2020"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/kycAadhaarImg"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_gravity="center"/>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/kycUploadAadhaar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/blue_dark_rounded_color"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:text="choose file"
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_4sdp"/>
+
+                        <TextView
+                            android:id="@+id/kycAadhaarSuccess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="No File Choosen"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#3E3E3E"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload Aadhar\nBack Side"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#403E3E"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="(Format of Doc (PNG/\nJPEG)Max 250kb)"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#FF2020"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/kycAadhaarSecondImg"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_gravity="center"/>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/kycUploadAadhaarSecond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/blue_dark_rounded_color"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:text="choose file"
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_4sdp"/>
+
+                        <TextView
+                            android:id="@+id/kycAadhaarSecondSuccess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="No File Choosen"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#3E3E3E"
+                            android:textStyle="bold|italic"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload PAN Card"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="#403E3E"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="(Format of Doc (PNG/\nJPEG)Max 250kb)"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#FF2020"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/kycPanImg"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/edittext_bg"
+                            android:layout_gravity="center"/>
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/kycUploadPan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/blue_dark_rounded_color"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:text="choose file"
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:padding="@dimen/_4sdp"/>
+
+                        <TextView
+                            android:id="@+id/kycPanSuccess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="No File Choosen"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_10ssp"
+                            android:textColor="#3E3E3E"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/kycSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/blue_button_background"
+                android:text="Done"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

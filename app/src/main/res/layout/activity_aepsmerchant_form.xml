@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".activities.AEPSMerchantForm">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/blue_fill_rectangle_color">
+
+        <ImageView
+            android:id="@+id/merchantBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="AEPS Merchant Form"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="5dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:text="VIEW PROFILE"-->
+            <!--                    android:textColor="@color/blue"-->
+            <!--                    android:textSize="20sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--            </RelativeLayout>-->
+
+
+            <!--            Profile Pic Start-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:weightSum="2">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:text="Profile Image"-->
+            <!--                        android:textColor="@color/blue"-->
+            <!--                        android:textSize="16sp" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="120dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/edittext_bg"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:src="@drawable/img_warning" />-->
+
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:text="Pancard Image"-->
+            <!--                        android:textColor="@color/blue"-->
+            <!--                        android:textSize="16sp" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="120dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/edittext_bg"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:src="@drawable/img_warning" />-->
+
+            <!--                </LinearLayout>-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:weightSum="2">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:text="Aadhar 1"-->
+            <!--                        android:textColor="@color/blue"-->
+            <!--                        android:textSize="16sp" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="120dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/edittext_bg"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:src="@drawable/img_warning" />-->
+
+            <!--                </LinearLayout>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:text="Aadhar 2"-->
+            <!--                        android:textColor="@color/blue"-->
+            <!--                        android:textSize="16sp" />-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="120dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@drawable/edittext_bg"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:src="@drawable/img_warning" />-->
+
+            <!--                </LinearLayout>-->
+
+            <!--            </LinearLayout>-->
+
+
+            <!--            End of profile pics-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantName"
+                            android:layout_width="match_parent"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/home"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantFirmName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Firm Name"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/home"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantID"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Merchant ID"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/password123"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantPanNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Pan No"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/password123"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantAadhaarNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Aadhaar No"
+                            android:inputType="number"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/password123"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantPinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Pin Code"
+                            android:inputType="number"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/map"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantDistrict"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="District"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/map"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantState"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="State"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:startIconDrawable="@drawable/home"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/merchantAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:hint="Permanent Address"
+                            android:inputType="text"
+                            android:paddingVertical="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_sky_blue"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/merchantPanCard"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:text="PAN CARD"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_8ssp"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/merchantAadhaarCard"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:text="AADHAR CARD"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_8ssp"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/merchantAadhaarCardBack"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:text="AADHAR CARD BACK"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_8ssp"
+                        android:textColor="#000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/merchantFormUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/blue_button_background"
+                android:text="Done"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_16ssp"/>
+
+            <TextView
+                android:id="@+id/merchantFormButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Complete KYC First !"
+                android:visibility="gone"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textColor="#F51616"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

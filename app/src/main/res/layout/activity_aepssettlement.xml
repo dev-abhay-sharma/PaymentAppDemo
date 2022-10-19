@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.AEPSSettlement">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutAEPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/logo_blue"
+        app:tabIconTint="#fff"
+        android:textAlignment="center"
+        app:tabIndicatorColor="#F58DB0"
+        app:tabTextColor="#fff"
+        app:tabMode="fixed"
+        app:tabGravity="fill" >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beneficiary"
+            android:icon="@drawable/add_person_red"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fund Transfer"
+            android:icon="@drawable/rupee_green"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_1sdp"/>
+
+</LinearLayout>

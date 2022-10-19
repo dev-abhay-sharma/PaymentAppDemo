@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swinfotech.swpay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SWPay"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:theme"
+        tools:targetApi="n">
+        <activity
+            android:name=".activities.AddMoneyCreditCard"
+            android:exported="true" />
+        <activity
+            android:name=".activities.UPIAddMoney"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DownlineSalesReport"
+            android:exported="true" />
+        <activity
+            android:name=".signin.LoginOtp"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AEPSMerchantFormStart"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AEPSMerchantForm"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddBeneficiaryBeta"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddNewRemitterOTPBeta"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BeneficiaryListBeta"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddNewRemitterBeta"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DMTServiceBeta"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AEPSSettlement"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AEPSToWallet"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AEPSReports"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AepsToWalletSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AEPSAddBeneficiary"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Entry"
+            android:exported="true" />
+        <activity
+            android:name=".signin.IntroSlider"
+            android:exported="true" />
+        <activity
+            android:name=".activities.KYC"
+            android:exported="true" />
+        <activity
+            android:name=".activities.KYCPopUp"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Notification"
+            android:exported="true" />
+        <activity
+            android:name=".activities.EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TermsAndConditions"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MyProfile"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RaiseComplaintOutSide"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Help"
+            android:exported="true" /> <!-- android:theme="@style/Theme.SWPay.NoActionBar" /> -->
+        <activity
+            android:name=".activities.RaiseComplaint"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TransactionSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TransactionSuccessOrId"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SearchByNumber"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SearchByOrderId"
+            android:exported="true" />
+        <activity
+            android:name=".activities.OtherComplaintReport"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ComplaintReport"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RaiseComplaintTransaction"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TransactionReportSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.StatementsReport"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TransactionReport"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PayRequestHistory"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ManageRequest"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ManagePaymentRequest"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DebitReport"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AllReports"
+            android:exported="true" /> <!-- android:theme="@style/Theme.SWPay.NoActionBar" /> -->
+        <activity
+            android:name=".activities.PaymentLoadReport"
+            android:exported="true" />
+        <activity
+            android:name=".activities.OperatorCommission"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CreditBalUsers"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CreditBalance"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ViewUsers"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddUser"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddBeneSuccessDialog"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddBeneficiary"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BeneficiaryList"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RemitterAddSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddNewRemitterOTP"
+            android:exported="true" />
+        <activity
+            android:name=".activities.VeryfyBeneficiary"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DeleteBeneSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TPin"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MoneyTransferSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TransferInfo"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TransferMoney"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BBPSPaymentDone"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BbpsBillConfirm"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BillDetails"
+            android:exported="true" />
+        <activity
+            android:name=".activities.OPListElectricity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.BBPSCategorie"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PaymentRequest"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Telecom"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PostpaidSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PostpaidConfirmation"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PostpaidOperatorList"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PostPaidCustInfo"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DTHSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DTHOperatorList"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DTHCustInfo"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DTHConfirmation"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RechargeOperatorList"
+            android:exported="true" />
+        <activity
+            android:name=".activities.RechargeConfirmation"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MobileRechargeOffers"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MobileRechargePlans"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ChangeTPIN"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ChangePassword"
+            android:exported="true" />
+        <activity
+            android:name=".activities.CreateAppLock"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PrivacyPolicy"
+            android:exported="true" />
+        <activity
+            android:name=".signin.ForgetSuccessMessage"
+            android:exported="true" />
+        <activity
+            android:name=".signin.SetNewPassword"
+            android:exported="true" />
+        <activity
+            android:name=".signin.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".activities.LockScreenActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".signin.SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".signin.Login"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

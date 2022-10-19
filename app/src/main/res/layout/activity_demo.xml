@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background1"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:id="@+id/rootViewMobile"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifFailed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    app:loopCount="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/failure" />
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    app:loopCount="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/checkmarksuccess" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/recharge_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Recharge Successfully"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/request_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Refill request Success 1/25/2022 4:59:54 PM"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Num:9012792932"
+                        android:textColor="@color/green"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Amt:250"
+                        android:textColor="@color/green"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Wallet:804.870 TRXN"
+                        android:textColor="@color/green"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <!--            android:id="@+id/transcation_id"-->
+                <TextView
+                    android:id="@+id/transcation_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="opId"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Payment Summary"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/status_image"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:src="@drawable/rounded_check_green" />
+
+                <TextView
+                    android:id="@+id/mobile_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="9012792932"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/oprator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="-1dp"
+                    android:text="JIO"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="-1dp"
+                    android:text="Jan 25, 2022, 4:59:52 PM"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/vector_rupees" />
+
+                    <TextView
+                        android:id="@+id/rupees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_16ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rupees"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginTop="-40dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:text="25"-->
+<!--                    android:textColor="@color/green"-->
+<!--                    android:textSize="@dimen/_16ssp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_20sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginTop="-25dp"-->
+<!--                    android:layout_marginRight="45dp"-->
+<!--                    android:src="@drawable/vector_rupees" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/got_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background_unique"
+            android:text="Got It"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shareMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:background="@drawable/share_screenshot_rounded_blue"
+            android:text="Share"
+            android:textColor="@color/logo_blue"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

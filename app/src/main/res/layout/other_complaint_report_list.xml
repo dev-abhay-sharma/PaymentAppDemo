@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Id : "
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/caOtherOrderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Id"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#5F5A5A"/>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="-16dp"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/caDate"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Date"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#4EA2E4"/>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Support Type : "
+                    android:textColor="#000"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="@dimen/_12sdp"-->
+                <!--                    android:layout_height="@dimen/_12sdp"-->
+                <!--                    android:layout_marginTop="@dimen/_2sdp"-->
+                <!--                    android:src="@drawable/red_rupee"/>-->
+
+                <TextView
+                    android:id="@+id/caOtherSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#514F4F"/>
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="@dimen/_82sdp"-->
+                <!--                    android:text="Tr.Type : "-->
+                <!--                    android:textSize="@dimen/_10ssp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textColor="#000"/>-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/stTxnType"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Debit"-->
+                <!--                    android:textSize="@dimen/_10ssp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textColor="#5F5A5A"/>-->
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="-18dp"-->
+            <!--                android:layout_gravity="right"-->
+            <!--                android:layout_marginEnd="@dimen/_10sdp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Txn Type : "-->
+            <!--                    android:textSize="@dimen/_10ssp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="#000"/>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/stTxnType"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Debit"-->
+            <!--                    android:textSize="@dimen/_10ssp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="#5F5A5A"/>-->
+
+            <!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="-18dp"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Amount : "-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#000"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_12sdp"-->
+<!--                    android:layout_height="@dimen/_12sdp"-->
+<!--                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                    android:src="@drawable/rupee_green"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/caAmount"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="9300.00"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#514F4F"/>-->
+
+<!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_2sdp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Details : "-->
+            <!--                    android:textSize="@dimen/_10ssp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="#000"/>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/caDetails"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="details"-->
+            <!--                    android:textSize="@dimen/_10ssp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="#5F5A5A"/>-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Date : "
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/caOtherAddDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#5F5A5A"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Response : "
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/caOtherResponse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="res"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#5F5A5A"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reply Date : "
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/caOtherReplyDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#5F5A5A"/>
+
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginEnd="@dimen/_10sdp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Support Type : "-->
+            <!--                    android:textSize="@dimen/_10ssp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="#000"/>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/caSupportType"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="support"-->
+            <!--                    android:textSize="@dimen/_10ssp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="#5F5A5A"/>-->
+
+            <!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Status : "-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#000"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/caStatusSuccess"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="status1"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#5F5A5A"/>-->
+
+<!--            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/caOtherStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-35dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="Status"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textColor="#24AE29"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="#736E6E" />
+
+            <TextView
+                android:id="@+id/caOtherMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Message"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold"
+                android:textColor="#7B7878"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".activities.BBPSPaymentDone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:id="@+id/rootViewBBPS"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifFailedBBPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        app:loopCount="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/failure" />
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifSuccessBBPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        app:loopCount="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/checkmarksuccess" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/doneStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Successfully"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold"
+                    android:textColor="#03A9F4"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/doneResp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Successfully"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="#03A9F4"
+                    android:layout_gravity="center_horizontal"/>
+
+                <View
+                    android:layout_width="@dimen/_310sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks : "
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#0B0B0B"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/doneRemarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Remarks "
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#7B7777"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/doneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:text="Name"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="#625E5E"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Date : "
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#0B0B0B"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/doneDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Date"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#7B7777"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer ID : "
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#0B0B0B"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/doneId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="ID"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#7B7777"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile No : "
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#0B0B0B"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/doneMobNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="9012792932"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#7B7777"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#0B0B0B"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/rupee_green"/>
+
+                    <TextView
+                        android:id="@+id/doneAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:text="1205"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        android:textColor="#7B7777"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doneBillPayment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:text="Done"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:background="@drawable/blue_button_background"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shareBBPS"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:background="@drawable/share_screenshot_rounded_blue"
+            android:text="Share"
+            android:textColor="@color/logo_blue"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

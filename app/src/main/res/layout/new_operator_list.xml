@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_100sdp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/opImageList"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp" />
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="@dimen/_40sdp"-->
+    <!--        android:layout_height="@dimen/_40sdp"-->
+    <!--        app:civ_circle_background_color="#eae8ff"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="@dimen/_25sdp"/>-->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/opNameList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opImageList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Payment Request"
+        android:textColor="#212529"
+        android:textSize="@dimen/_10ssp" />
+
+    <!--    <View-->
+    <!--        android:layout_width="1dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:background="@color/grey_300" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:background="@color/grey_300" />-->
+
+
+</RelativeLayout>

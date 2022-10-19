@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.ManageRequest">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Manage Request"
+        android:textColor="@color/logo_blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_edittext_skyblue">
+
+                <!--INPUT-->
+
+                <Spinner
+                    android:id="@+id/allow_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:entries="@array/manageRequest"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <!--        <Spinner-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/spinner"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:entries="@array/manageRequest"/>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp">
+<!--            android:background="@drawable/blue_border_rounded_cornwe">-->
+
+            <!--INPUT-->
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/mrTpin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toRightOf="@+id/pin_name_icon"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:hint="Your TPIN"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="6"-->
+<!--                android:paddingLeft="17dp"-->
+<!--                android:paddingTop="15dp"-->
+<!--                android:paddingBottom="15dp"-->
+<!--                android:textCursorDrawable="@drawable/cursor_color"-->
+<!--                android:textSize="20sp" />-->
+
+
+            <!--ICON-->
+<!--            <ImageView-->
+<!--                android:id="@+id/pin_name_icon"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:src="@drawable/pincode" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Your TPin"-->
+<!--                app:boxStrokeColor="@color/logo_blue"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/mrTpin"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="number"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:startIconDrawable="@drawable/password123"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mrTpin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:hint="Your TPin"
+                    android:inputType="number"
+                    android:paddingVertical="@dimen/_13sdp"
+                    android:background="@drawable/edit_text_sky_blue"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/mrRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/border_edittext_skyblue"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:hint="Remarks"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submit"
+            app:backgroundTint="@color/background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/blue_button_background"
+            android:padding="5dp"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

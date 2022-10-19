@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@null"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F6F8"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <!--                        <com.google.android.material.textfield.TextInputLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"-->
+                <!--                            app:startIconTint="@color/logo_blue"-->
+                <!--                            android:hint="Account Holder Name"-->
+                <!--                            app:boxStrokeColor="@color/logo_blue"-->
+                <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+                <!--                            <com.google.android.material.textfield.TextInputEditText-->
+                <!--                                android:id="@+id/aepsAddBeneName"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:inputType="text"/>-->
+                <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cfAddBeneName"
+                        android:layout_width="match_parent"
+                        android:hint="Account Holder Name"
+                        android:paddingVertical="@dimen/_13sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/edit_text_sky_blue"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!--                    <RelativeLayout-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="60dp"-->
+            <!--                        android:layout_marginLeft="20dp"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:layout_marginRight="20dp">-->
+            <!--                        -->
+            <!--                        <com.google.android.material.textfield.TextInputLayout-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            app:boxStrokeWidth="0dp"-->
+            <!--                            app:boxStrokeWidthFocused="0dp"-->
+            <!--                            app:startIconDrawable="@drawable/acc_no"-->
+            <!--                            app:hintEnabled="false">-->
+
+            <!--                            <com.google.android.material.textfield.TextInputEditText-->
+            <!--                                android:id="@+id/aepsAddBeneBankName"-->
+            <!--                                android:layout_width="match_parent"-->
+            <!--                                android:hint="Enter Bank Name"-->
+            <!--                                android:paddingVertical="@dimen/_13sdp"-->
+            <!--                                android:layout_height="@dimen/_40sdp"-->
+            <!--                                android:background="@drawable/edit_text_sky_blue"/>-->
+
+            <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--                    </RelativeLayout>-->
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/bankListAddBenecf"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/border_edittext_skyblue_rounded"
+                android:paddingStart="@dimen/_20sdp"
+                android:spinnerMode="dialog"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:startIconDrawable="@drawable/acc_no"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cfAddBeneAccNo"
+                        android:layout_width="match_parent"
+                        android:hint="Account No"
+                        android:inputType="number"
+                        android:paddingVertical="@dimen/_13sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/edit_text_sky_blue"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+
+                <!--                        <com.google.android.material.textfield.TextInputLayout-->
+                <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:hint="IFSC"-->
+                <!--                            app:boxStrokeColor="@color/logo_blue"-->
+                <!--                            app:startIconDrawable="@drawable/acc_no"-->
+                <!--                            app:startIconTint="@color/logo_blue">-->
+
+                <!--                            <com.google.android.material.textfield.TextInputEditText-->
+                <!--                                android:id="@+id/aepsAddBeneIfsc"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:inputType="text" />-->
+                <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:startIconDrawable="@drawable/acc_no"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cfAddBeneIfsc"
+                        android:layout_width="match_parent"
+                        android:hint="IFSC"
+                        android:paddingVertical="@dimen/_13sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/edit_text_sky_blue"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:startIconDrawable="@drawable/acc_no"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cfAddBeneAddress"
+                        android:layout_width="match_parent"
+                        android:hint="Address"
+                        android:paddingVertical="@dimen/_13sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/edit_text_sky_blue"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:startIconDrawable="@drawable/acc_no"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cfAddBenePincode"
+                        android:layout_width="match_parent"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:paddingVertical="@dimen/_13sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/edit_text_sky_blue"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+            <!--                        android:id="@+id/bankList"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="60dp"-->
+            <!--                        android:layout_marginStart="20dp"-->
+            <!--                        android:layout_marginEnd="20dp"-->
+            <!--                        android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                        android:background="@drawable/white_border_rounded_corner"-->
+            <!--                        android:paddingStart="@dimen/_20sdp"-->
+            <!--                        android:spinnerMode="dialog"/>-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cfAddBeneSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/blue_button_background"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14ssp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

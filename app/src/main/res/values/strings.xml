@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">S W Pay</string>
+
+    <!--TODO Change this support number it is for call  -->
+    <string name="support_number">9012792932</string>
+    <string name="support_email">Support@swpay.in</string>
+
+    <!-- Forget Password String -->
+    <string name="forget_password_detail">Provide Your Mobile Number \n Which You Want To Reset Your Password!</string>
+    <string name="make_selection_detail">Select Which Contact Detail Should we \nuse To Reset Your Password?</string>
+
+    <!-- Make Selection String -->
+    <string name="make_selection">Make \nSelection</string>
+    <string name="via_sms">via sms:</string>
+    <string name="via_mail">via mail:</string>
+
+
+    <!-- OTP Screens String -->
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter One Time Password Sent on\n+919012</string>
+    <string name="verify_code">Verify Code</string>
+
+    <!-- Set New Password String -->
+    <string name="new_credentials">New\nCredentials</string>
+    <string name="new_credentials_detail">Your Identity Has Been Verified!\nSet Your New Password</string>
+
+    <!-- Success Password String -->
+    <string name="password_updated">Password\nUpdated</string>
+    <string name="password_updated_success_message">Your Password Has Been Updated</string>
+
+
+    <string name="scan_pay"><![CDATA[Scan & Pay]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_us">We S W Pay provides payment solutions to the masses through its strong Agent Network using Semi-closed Wallet and Neo Banking Platform which enanbles agents to provide services like Domestic Money Transfer (DMT), cash withdrawal, Mini ATM (AEPS), PAN Card applications, travel bookings, Insurance, BBPS, Indo Nepal Money Transfer , Recharge and much more.</string>
+    <string name="privacy_policy">By using the app and/ or by providing your information, you consent to the collection and use of the you disclose on the app in accordance with this Privacy Policy, including but not limited to Your consent for sharing your information as per this privacy policy.
+
+If we decide to change our privacy policy, we will post those changes on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we disclose it Grievance Officer
+
+In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below.</string>
+
+
+    <string name="terms_and_conditions">Subject to guidelines/notifications issued by RBI from time to time these limitations may be reviewed and modified at the discretion of S W Pay Remit Wallet without prior intimation to the CSP.
+S W Pay reserves the right to suspend/discontinue S W Pay Remit Wallet Services to You at any time, for any cause, including, but not limited, to the following
+For any suspected violation of the rules, regulations, orders, directions, notifications issued by RBI from time to time or for any violation of the terms and conditions mentioned in this document.</string>
+
+
+    <string name="kyc">In order to serve you better and to avoid any hindrance in account operations, we sincerely urge all our customers to update their KYC documents.</string>
+    <string name="kyc1">KYC is mandatory for all users, banks must comply with KYC regulation and anti-money laundering regulations to limit fraud. \n Thank You !</string>
+
+    <string-array name="operator">
+        <item>Operator</item>
+        <item>Airtel</item>
+        <item>1</item>
+        <item>Jio</item>
+        <item>VI</item>
+    </string-array>
+
+    <string-array name="manageRequest">
+        <item>Allow Status</item>
+        <item>Approved</item>
+        <item>Declined</item>
+        <item>Hold</item>
+    </string-array>
+
+    <string-array name="circle">
+        <item>Circle</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>Assam</item>
+    </string-array>
+
+    <string-array name="raiseComplaint">
+        <item>Mobile Recharge Dispute</item>
+        <item>Billing Inquiry</item>
+        <item>Sales Inquiry</item>
+        <item>Other Technical Support</item>
+    </string-array>
+
+    <string-array name="selectScheme">
+        <item>Select Scheme</item>
+        <item>FRC</item>
+        <item>Billing Inquiry</item>
+        <item>Sales Inquiry</item>
+        <item>Other Technical Support</item>
+    </string-array>
+
+    <string-array name="addUser">
+        <item>SW Pay-FRC</item>
+        <item>Billing Inquiry</item>
+        <item>Sales Inquiry</item>
+        <item>Other Technical Support</item>
+    </string-array>
+
+    <string-array name="biometricDevice">
+        <item>Select</item>
+        <item>MORPHO</item>
+        <item>MANTRA</item>
+        <item>STARTEK</item>
+    </string-array>
+
+    <string-array name="moneyTransferType">
+        <item>Select</item>
+        <item>IMPS</item>
+        <item>NEFT</item>
+    </string-array>
+
+    <string-array name="moneyTransferTypeValues">
+        <item>Select</item>
+        <item>58</item>
+        <item>127</item>
+    </string-array>
+
+    <string-array name="moneyTransferType1">
+        <item>Select</item>
+        <item>IMPS</item>
+        <item>NEFT</item>
+        <item>RTGS</item>
+    </string-array>
+
+    <string-array name="trReport">
+        <item>All</item>
+        <item>Success</item>
+        <item>Failure</item>
+        <item>Refund</item>
+    </string-array>
+
+    <string-array name="trReport1">
+        <item id="0">All</item>
+        <item id="SUCCESS">Success</item>
+        <item id="FAILED">Failure</item>
+    </string-array>
+
+    <string name="title_activity_telecom">Telecom</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="this_is_mobile_fragment1">This is mobile Fragment1</string>
+    <string name="this_is_mobile_fragment2">This is mobile Fragment2</string>
+    <string name="this_is_mobile_fragment3">This is mobile Fragment3</string>
+    <string name="title_activity_reports">Reports</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="rupee_sysmble">₹</string>
+    <string name="technical_support">Technical Support</string>
+    <string name="technical_support1">Call &amp; whatsApp</string>
+    <string name="sales_support"><![CDATA[Sales & Other Support]]></string>
+    <string name="sales_support1">Call Only</string>
+
+
+    <!--    On boarding Strings-->
+    //Headings
+    <string name="heading_one">Quick &amp; Easy Payments</string>
+    <string name="heading_two">Instant Notifications</string>
+    <string name="heading_three">Cashless Payment</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+
+    //Description
+    <string name="desc_one">Grow Your Business With S W Pay We Provided Best Service In The Nation.</string>
+    <string name="desc_two">S W Pay Provides Mobile Recharge, DTH, Postpaid, DMT, BBPS, AEPS And So Many Services.</string>
+    <string name="desc_three">S W Pay Provides you fast and Cashless Payment System Service and 24/7 Support</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
+</resources>

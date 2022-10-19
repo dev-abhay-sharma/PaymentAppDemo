@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFF8FC"
+    android:orientation="vertical"
+    tools:context=".activities.BeneficiaryList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/blue_fill_rectangle_color">
+
+        <ImageView
+            android:id="@+id/beneBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Beneficiary List"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:padding="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/user"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#212529"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/beneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#6D6E6F"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No : "
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#212529"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/beneMobNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Mob No"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#6D6E6F"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remitter ID : "
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#212529"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/beneRemitterId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RemitterID"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#6D6E6F"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="-30dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Limit : "
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#212529"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:src="@drawable/rupee_green"/>
+
+            <TextView
+                android:id="@+id/monthlyLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:text="12000.00"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Limit : "
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#212529"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:src="@drawable/rupee_green"/>
+
+            <TextView
+                android:id="@+id/availableLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:text="12000.00"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addBeneficiary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginEnd="@dimen/_90sdp"
+            android:text="Add Beneficiary"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_dark_rounded_color"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/beneRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8EDF1"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+</LinearLayout>

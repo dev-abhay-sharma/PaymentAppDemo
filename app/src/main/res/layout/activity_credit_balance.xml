@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.CreditBalance">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/blue_fill_rectangle_color">
+
+        <ImageView
+            android:id="@+id/gotoMainDASHBO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Credit Balance"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <!-- This layout for other works right now i don't know -->
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:layout_marginTop="15dp">-->
+    <!--        -->
+    <!--        -->
+    <!--        -->
+    <!--    </RelativeLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/payin_transfer" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Credit Balance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="just give few details"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--            <Spinner-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:paddingLeft="15dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:background="@drawable/edittext_bg"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/selectUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/edittext_bg"
+                    android:textAlignment="center"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+<!--                        android:layout_marginTop="10dp"-->
+
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="40dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginBottom="15dp"-->
+<!--                            android:src="@drawable/user_name" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/userName"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="1dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginBottom="1dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:background="@drawable/border_edittext1"-->
+<!--                            android:hint="UserName"-->
+<!--                            android:textSize="18sp" />-->
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"-->
+<!--                            app:startIconTint="@color/logo_blue"-->
+<!--                            android:hint="Username"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/userName1"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/ic_person_pin_grey_800_24dp"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userName1"
+                                android:layout_width="match_parent"
+                                android:hint="Username"
+                                android:inputType="text"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:startIconDrawable="@drawable/phone"-->
+<!--                            app:startIconTint="@color/logo_blue"-->
+<!--                            android:hint="Mobile No"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/userMobile1"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="number"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/phone"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userMobile1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Mobile No"
+                                android:inputType="number"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:startIconDrawable="@drawable/rupee_green"-->
+<!--                            app:startIconTint="@color/logo_blue"-->
+<!--                            android:hint="Amount"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/userAmount"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="number"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/rupee_green"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Amount"
+                                android:inputType="number"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:startIconDrawable="@drawable/password123"-->
+<!--                            app:startIconTint="@color/logo_blue"-->
+<!--                            android:hint="Enter TPin"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/userTPIN"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="number"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/password123"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userTPIN"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Enter TPin"
+                                android:inputType="number"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+<!--                        <com.google.android.material.textfield.TextInputLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:startIconDrawable="@drawable/message"-->
+<!--                            app:startIconTint="@color/logo_blue"-->
+<!--                            android:hint="Remark"-->
+<!--                            app:boxStrokeColor="@color/logo_blue"-->
+<!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/userRemark"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:inputType="text"/>-->
+<!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/message"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userRemark"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Remark"
+                                android:inputType="text"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/walletAddBal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/blue_button_background"
+                android:gravity="center"
+                android:text="Wallet Transfer"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_16ssp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/mobileVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/amountVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="amt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:padding="10dp" />
+
+</LinearLayout>

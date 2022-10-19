@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.TPin">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/closeOTP"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/cross_vector"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="-10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Delete Beneficiary : "
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="#212529"/>
+
+                <TextView
+                    android:id="@+id/deleteRPTid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Delete Beneficiary"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="#958888"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Please Enter Your 6 Digit OTP"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                android:textColor="#212529"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/beneDeleteOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PinWidget.PinView"
+                app:hideLineWhenFilled="true"
+                android:inputType="number"
+                android:textColor="#03A9F4"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:itemCount="6"
+                app:cursorColor="#F44336"
+                app:itemWidth="@dimen/_30sdp"
+                app:itemHeight="@dimen/_35sdp"
+                app:itemRadius="4dp"
+                app:itemSpacing="@dimen/_10sdp"
+                app:viewType="rectangle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TPin Mismatched"
+                android:textColor="#F50303"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#fff"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteDone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18ssp"
+                android:background="@drawable/blue_dark_rounded_color"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

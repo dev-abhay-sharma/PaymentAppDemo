@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/addMoneyLayout"
+    android:orientation="vertical"
+    tools:context=".activities.AddMoneyCreditCard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/blue_fill_rectangle_color">
+
+        <ImageView
+            android:id="@+id/addMoneyBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add Money"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:src="@drawable/credit_card_icon"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="Add Money to Wallet By using Credit/ Debit Card"
+                android:textColor="#7A7979"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:transitionName="username_tran"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:startIconDrawable="@drawable/rupee_green"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cardAmount"
+                    android:layout_width="match_parent"
+                    android:hint="Enter Amount"
+                    android:inputType="number"
+                    android:paddingVertical="@dimen/_13sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/border_edittext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/cardMessage"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginLeft="@dimen/_20sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_marginRight="@dimen/_20sdp"-->
+<!--                android:background="@drawable/border_edittext"-->
+<!--                android:drawablePadding="5dp"-->
+<!--                android:gravity="start"-->
+<!--                android:hint="Message"-->
+<!--                android:inputType="text|textMultiLine"-->
+<!--                android:padding="5dp"-->
+<!--                android:textSize="16sp" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:transitionName="username_tran"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cardMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:hint="Enter Message"
+                    android:maxLines="10"
+                    android:gravity="start"
+                    android:inputType="text|textMultiLine"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="@drawable/border_edittext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addMoney"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Pay Now"
+                android:textAllCaps="false"
+                android:background="@color/logo_blue"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:transitionName="button_tran"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

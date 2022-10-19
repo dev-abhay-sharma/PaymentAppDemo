@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.AepsFundTransfer">
+
+    <RelativeLayout
+        android:id="@+id/a_Wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:src="@drawable/aeps_to_wallet_first" />
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:background="@drawable/button_background1"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:paddingLeft="10dp"-->
+        <!--            android:paddingRight="5dp">-->
+
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="$"-->
+        <!--                android:textColor="#ffffff"-->
+        <!--                android:textSize="18sp" />-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="40dp"-->
+        <!--                android:layout_marginLeft="5dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="2500.00"-->
+        <!--                android:textColor="#ffffff"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/a_Wallet"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F6F8"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/walletTransferAeps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/blue_dark_rounded_color"
+                                android:gravity="center"
+                                android:text="To Wallet Transfer"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/bankTransferAeps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="To Bank Transfer"
+                                android:textColor="#3F51B5"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="10dp"-->
+                        <!--                            android:text="AEPS WALLET TO MAIN WALLET TRANSFER"-->
+                        <!--                            android:textColor="#0000FF"-->
+                        <!--                            android:textStyle="bold"-->
+                        <!--                            android:textSize="20sp" />-->
+
+                        <!--                        <ImageView-->
+                        <!--                            android:layout_width="100dp"-->
+                        <!--                            android:layout_height="100dp"-->
+                        <!--                            android:layout_gravity="center"-->
+                        <!--                            android:layout_marginTop="10dp"-->
+                        <!--                            android:src="@drawable/swpay_removebg" />-->
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp">
+
+
+                            <!--                            <com.google.android.material.textfield.TextInputLayout-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                app:startIconDrawable="@drawable/acc_no"-->
+                            <!--                                app:startIconTint="@color/logo_blue"-->
+                            <!--                                android:hint="Current Aeps Balance"-->
+                            <!--                                app:boxStrokeColor="@color/logo_blue"-->
+                            <!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+                            <!--                                <com.google.android.material.textfield.TextInputEditText-->
+                            <!--                                    android:id="@+id/currentAepsBal"-->
+                            <!--                                    android:layout_width="match_parent"-->
+                            <!--                                    android:layout_height="wrap_content"-->
+                            <!--                                    android:focusable="false"-->
+                            <!--                                    android:enabled="false"-->
+                            <!--                                    android:inputType="number"/>-->
+                            <!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxStrokeWidth="0dp"
+                                app:boxStrokeWidthFocused="0dp"
+                                app:hintEnabled="false"
+                                app:startIconDrawable="@drawable/acc_no">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/currentAepsBal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/edit_text_sky_blue"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:hint="Current Aeps Balance"
+                                    android:inputType="number"
+                                    android:paddingVertical="@dimen/_13sdp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp">
+
+
+                            <!--                            <com.google.android.material.textfield.TextInputLayout-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                app:startIconDrawable="@drawable/acc_no"-->
+                            <!--                                app:startIconTint="@color/logo_blue"-->
+                            <!--                                android:hint="Current Aeps Limit"-->
+                            <!--                                app:boxStrokeColor="@color/logo_blue"-->
+                            <!--                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+
+                            <!--                                <com.google.android.material.textfield.TextInputEditText-->
+                            <!--                                    android:id="@+id/currentAepsLimit"-->
+                            <!--                                    android:layout_width="match_parent"-->
+                            <!--                                    android:layout_height="wrap_content"-->
+                            <!--                                    android:focusable="false"-->
+                            <!--                                    android:enabled="false"-->
+                            <!--                                    android:inputType="number"/>-->
+                            <!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxStrokeWidth="0dp"
+                                app:boxStrokeWidthFocused="0dp"
+                                app:hintEnabled="false"
+                                app:startIconDrawable="@drawable/acc_no">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/currentAepsLimit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/edit_text_sky_blue"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:hint="Current Aeps Limit"
+                                    android:inputType="number"
+                                    android:paddingVertical="@dimen/_13sdp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/selectBeneAeps"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/border_edittext_skyblue"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:spinnerMode="dialog"
+                            android:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/selectPayMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="20dp"
+                            android:entries="@array/moneyTransferType1"
+                            android:background="@drawable/border_edittext_skyblue"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:spinnerMode="dialog"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxStrokeWidth="0dp"
+                                app:boxStrokeWidthFocused="0dp"
+                                app:hintEnabled="false"
+                                app:startIconDrawable="@drawable/vector_rupees">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/aepsWithdrawalAmt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/edit_text_sky_blue"
+                                    android:hint="Withdrawal Amount"
+                                    android:inputType="number"
+                                    android:paddingVertical="@dimen/_13sdp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/aepsTPinBank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxStrokeWidth="0dp"
+                                app:boxStrokeWidthFocused="0dp"
+                                app:hintEnabled="false"
+                                app:startIconDrawable="@drawable/password123">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/aepsTPin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/edit_text_sky_blue"
+                                    android:hint="TPin"
+                                    android:inputType="number"
+                                    android:paddingVertical="@dimen/_13sdp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/aepsToWalletSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_40sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/blue_button_background"
+                            android:text="Submit"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/aepsToBankSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_40sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/blue_button_background"
+                            android:text="Pay"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="Payment Request"
+        android:textColor="@color/background_color"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payment_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Payment History"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/payment_request"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Request From"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Next"
+        app:backgroundTint="@color/background_color"
+        app:cornerRadius="@dimen/_10sdp" />
+
+
+</LinearLayout>

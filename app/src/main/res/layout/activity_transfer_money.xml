@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.TransferMoney">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:id="@+id/icPay"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/dmt_new1"/>
+            <!--                android:src="@drawable/bank_transfer_img"/>-->
+
+
+            <!--            android:background="@drawable/blue_fill__rounded_color"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:id="@+id/tvTransfer"
+                android:layout_marginLeft="62dp"
+                android:layout_marginRight="62dp"
+                android:background="@drawable/blue_dark_rounded_color"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="Transfer Money Quickly"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_18ssp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/llPay"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="62dp"
+                        android:gravity="center"
+                        android:id="@+id/tvDetails"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="Just Give Few Details"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.7dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp">
+                        <!--                android:background="@drawable/blue_border_rounded_cornwe">-->
+
+
+                        <!--                        <com.google.android.material.textfield.TextInputLayout-->
+                        <!--                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:hint="Enter Mobile No"-->
+                        <!--                            app:boxStrokeColor="@color/logo_blue"-->
+                        <!--                            app:startIconDrawable="@drawable/phone"-->
+                        <!--                            app:startIconTint="#142E4A">-->
+
+                        <!--                            <com.google.android.material.textfield.TextInputEditText-->
+                        <!--                                android:id="@+id/mob_transfer"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:inputType="number" />-->
+                        <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeWidth="0dp"
+                            android:id="@+id/llmobile"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:startIconDrawable="@drawable/phone"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mob_transfer"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:hint="Enter Mobile No"
+                                android:inputType="number"
+                                android:paddingVertical="@dimen/_13sdp"
+                                android:background="@drawable/edit_text_sky_blue"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                    <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                    <!--                        android:id="@+id/transfer_money"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="@dimen/_40sdp"-->
+                    <!--                        android:background="@drawable/blue_dark_rounded_color"-->
+                    <!--                        android:layout_marginTop="@dimen/_15sdp"-->
+                    <!--                        android:layout_marginBottom="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginStart="@dimen/_45sdp"-->
+                    <!--                        android:layout_marginEnd="@dimen/_45sdp"-->
+                    <!--                        android:text="DMT Alpha"-->
+                    <!--                        android:textColor="#fff"-->
+                    <!--                        android:textSize="@dimen/_14sdp"-->
+                    <!--                        android:textStyle="bold"-->
+                    <!--                        android:layout_gravity="center_horizontal"/>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/llDMT"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/transfer_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/blue_dark_rounded_color"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:text="DMT ALPHA"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/llDMTCF"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/transfer_money_cf"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/blue_dark_rounded_color"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:text="DMT"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/llDMTBeta"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/transfer_money_beta1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/blue_dark_rounded_color"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:text="DMT Beta"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

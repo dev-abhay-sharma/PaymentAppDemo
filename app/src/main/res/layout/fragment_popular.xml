@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="@dimen/_10sdp"
+tools:context=".fragment.PopularFragment">
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Popular"-->
+<!--    android:textSize="@dimen/_18ssp"-->
+<!--    android:textColor="#000"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:textStyle="bold"/>-->
+
+    <TextView
+        android:id="@+id/errorPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plans Not Available"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#F90101"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/popularRecView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>

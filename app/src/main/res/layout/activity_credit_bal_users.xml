@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".activities.CreditBalUsers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Select Item"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+<!--        <SearchView-->
+<!--            android:id="@+id/searchViewUser"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@drawable/edittext_bg"-->
+<!--            android:iconifiedByDefault="false"-->
+<!--            android:queryHint="SEARCH USER" />-->
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:iconifiedByDefault="false"
+            app:queryHint="SEARCH USER"
+            android:background="@drawable/edittext_bg"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/crRecView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
